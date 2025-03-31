@@ -31,7 +31,7 @@ sudo systemctl enable docker
 sudo usermod -aG docker azureuser
 
 # Set permissions for Docker socket
-sudo chmod 660 /var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 
 # Verify Docker installation and permissions
 sudo docker --version
